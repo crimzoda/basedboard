@@ -1,0 +1,73 @@
+.canvas-container {
+    background-color: #3150ff;
+    width: 9000px;
+    height: 9000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.float-container {
+    padding: 20px;
+}
+
+body {
+    color: black;
+    font-family: Arial;
+    font-size: 12px;
+    background-color: #2b42c5;
+    overflow: hidden;
+}
+
+.tile {
+    background-image: url(tile_window.png);
+    width: 300;
+    height: 300;
+}
+
+.tile-content {
+    margin: 10px;
+}
+
+.tile-header {
+    color: white;
+    margin-left: 35px;
+    margin-top: -8px;
+}
+
+.tile-footer {
+    margin-left: 10px;
+}
+
+.tile-like-button {
+    float: right;
+    margin-right: 10px;
+}
+
+.tile-like-count {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.tile-link {
+    text-overflow: ellipsis;
+}
+
+.formdiv {
+    background-image: url(submit_window.png);
+    margin:0 auto; 
+    width: 303px;
+    height: 330px;
+    position: absolute;
+}
+
+#hover_tile {
+    visibility: hidden;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: #2b42c5;
+    position: absolute;
+}

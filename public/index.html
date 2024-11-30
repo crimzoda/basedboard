@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <title>basedboard</title>
+        <meta name="description" content="post you own tiles to the public canvas with whatever media you want in real time.">
+        <meta property="og:description" content="post you own tiles to the public canvas with whatever media you want in real time.">
+        <meta property="og:image" content="info_window_og.png">
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <div id="canvas" class="canvas-container">
+        <!-- tiles will be placed here -->
+        <div id="hover_tile"></div>
+    </div> 
+    
+    </div>
+    <div class="formdiv" style="float: left;">
+        <form id="tileForm" class="submit-form" style="margin-top: 50px; margin-left: 15px;">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" maxlength="32" required><br><br>
+            
+            <label for="mediaURL">image/video url:</label>
+            <input type="text" id="mediaURL" name="mediaURL" required><br><br>
+            
+            <label for="linkURL">link url:</label>
+            <input type="text" id="linkURL" name="linkURL" required><br><br>
+            
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username" value="anonymous" required><br><br>
+
+            <label for="tileColor">color: </label><input type="color" id="color" name="color" value="#ffffff"/><br><br>
+
+            <label for="xCoord">x:</label><label id="xCoord" name="xCoord">0</label>
+            
+            <label for="yCoord">, y:</label><label id="yCoord" name="yCoord">0</label><br><br>
+
+            <button type="submit">Create Tile</button><label id="errorText" style="color: red; margin-left: 10px;"></label>
+        
+            
+        </form>  
+        <div id="captcha" class="g-recaptcha" data-sitekey="6Lfr958nAAAAALTEgUAsSu85PophWLPfrQSsV7DF" style="margin-top: 60px;"></div>
+    </div>
+    <div style="width: 303px; height: 255px; background-image: url(info_window.png); position: relative; float: right;">
+        <div style="margin-top: 30px; margin-left: 15px;">
+            <label>post your own media tiles! share an image, link<br>and text in realtime, think of it as r/place with media sharing. <strong>click anywhere on the canvas to start!</strong>
+            <br><br>
+            this is still in alpha state so more features are to come:
+            <br><br>- reactions
+            <br>- more customization (colors etc.)
+            <br><br>
+            By submitting you agree you are not submitting anything illegal or pornographic.
+            <br><br>
+            Copyright © basedboard
+            </label>
+        </div>
+    </div>
+    <script src="/__/firebase/10.1.0/firebase-app-compat.js"></script>
+    <script src="/__/firebase/10.1.0/firebase-database-compat.js"></script>
+    <script src="tilesubmit.js"></script>
+    <script src="move_canvas.js"></script>
+</html>
