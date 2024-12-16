@@ -1,12 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAX_ZKKvYKuPn3QIlyeLBtYPHLzcLk7u5o",
-    authDomain: "basedboard-2b634.firebaseapp.com",
-    databaseURL: "https://basedboard-2b634-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "basedboard-2b634",
-    storageBucket: "basedboard-2b634.appspot.com",
-    messagingSenderId: "1068057397624",
-    appId: "1:1068057397624:web:ded0e9feb9af3cb259208d",
-    measurementId: "G-LH8ZBZ7HSL"
+    apiKey: "key",
+    authDomain: "domain",
+    databaseURL: "url",
+    projectId: "id",
+    storageBucket: "bucket",
+    messagingSenderId: "senderid",
+    appId: "appid",
+    measurementId: "measurement id"
   };
 
 const app = firebase.initializeApp(firebaseConfig);
