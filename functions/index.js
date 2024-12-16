@@ -19,7 +19,7 @@ const fetch = require('node-fetch');
 const imageType = ['png', 'jpg', 'jpeg', 'bmp', 'gif'];
 const videoType = ['mp4', 'webm'];
 
-const recaptchaSecretKey = '6Lfr958nAAAAAPlGq6852bRTYofqdbcg5FNbuTVN';
+const recaptchaSecretKey = '********************';
 
 const cors = require('cors')({ origin: true });
 
